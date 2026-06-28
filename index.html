@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novriansyah | AI Data & Creative Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                            950: '#172554',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-balance {
+                text-wrap: balance;
+            }
+            .gradient-text {
+                @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-brand-400;
+            }
+            .glass {
+                @apply bg-white/70 backdrop-blur-md border border-white/20;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-slate-50">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-bold text-xl gradient-text">N.</div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-brand-600 transition-colors">About</a>
+                    <a href="#experience" class="hover:text-brand-600 transition-colors">Experience</a>
+                    <a href="#portfolio" class="hover:text-brand-600 transition-colors">Portfolio</a>
+                    <a href="#contact" class="hover:text-brand-600 transition-colors">Contact</a>
+                </div>
+                <a href="mailto:novriansyah@example.com" class="px-4 py-2 bg-brand-600 text-white text-sm font-medium rounded-full hover:bg-brand-700 transition-colors">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 lg:pt-40 lg:pb-28 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold uppercase tracking-wide">
+                        Available for Elite Projects
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight text-balance">
+                        Hi, I'm <span class="gradient-text">Novriansyah</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-semibold text-slate-700 text-balance">
+                        AI-Augmented Copywriter & Elite AI Operations Specialist
+                    </p>
+                    <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
+                        I architect conversion narratives and optimize AI workflows at the intersection of human creativity, voice expertise, and machine intelligence.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#portfolio" class="px-6 py-3 bg-brand-600 text-white font-medium rounded-lg hover:bg-brand-700 transition-colors text-center">
+                            View Portfolio
+                        </a>
+                        <a href="#experience" class="px-6 py-3 bg-white text-slate-700 font-medium rounded-lg border border-slate-200 hover:border-brand-300 hover:text-brand-600 transition-colors text-center">
+                            My Experience
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square max-w-md mx-auto relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand-200 to-brand-400 rounded-full blur-3xl opacity-30"></div>
+                        <div class="relative bg-gradient-to-br from-slate-200 to-slate-300 rounded-full aspect-full flex items-center justify-center overflow-hidden border-4 border-white shadow-2xl">
+                            <svg class="w-32 h-32 text-slate-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                            <div class="absolute bottom-4 right-4 bg-brand-600 text-white text-xs font-bold px-2 py-1 rounded-full">
+                                AI-Native
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Bio -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">About My Approach</h2>
+                <div class="w-20 h-1 bg-brand-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="prose prose-lg prose-slate max-w-none">
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    I operate at the intersection of <strong class="text-slate-900">human creativity</strong>, <strong class="text-slate-900">voice expertise</strong>, and <strong class="text-slate-900">AI workflow efficiency</strong>. My process leverages Claude, GPT-4o, and custom prompt stacks to accelerate research and structure—while manual curation, storytelling judgment, and persuasion psychology remain firmly in human hands.
+                </p>
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    For me, AI is not a replacement for creativity; it's a multiplier. I build reusable prompt libraries, QA frameworks, and compliance checklists that ensure every output meets editorial standards. The result? Content that moves markets—fast, compliant, and unmistakably human.
+                </p>
+                <p class="text-lg text-slate-700 leading-relaxed">
+                    Whether mapping cold traffic from <em class="text-slate-900">Unaware</em> to <em class="text-slate-900">Solution Aware</em> through native advertorials, or optimizing landing pages for high-ticket health offers, I treat every project as a strategic conversion system—not just a writing assignment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Professional Experience</h2>
+                <div class="w-20 h-1 bg-brand-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-slate-900">AI Trainer / Content Evaluator</h3>
+                                    <p class="text-brand-600 font-medium">Outlier & Alignerr</p>
+                                </div>
+                                <span class="text-sm text-slate-500 mt-1 sm:mt-0">Ongoing</span>
+                            </div>
+                            <p class="text-slate-700 leading-relaxed">
+                                Performing advanced curation, editing, and training of large language models to ensure high-quality, bias-free text output. Evaluating AI-generated content against rigorous quality benchmarks and providing feedback loops that improve model performance at scale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-slate-900">Search Engine Evaluator & Data Analyst</h3>
+                                    <p class="text-brand-600 font-medium">Telus International & Appen</p>
+                                </div>
+                                <span class="text-sm text-slate-500 mt-1 sm:mt-0">Previous</span>
+                            </div>
+                            <p class="text-slate-700 leading-relaxed">
+                                Optimizing global search algorithm relevance and data evaluation accuracy. Analyzing search results, assessing content quality, and providing structured feedback that trains AI systems to understand user intent across languages and cultures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center">
+                                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-slate-900">Voice Over & Audio Talent Specialist</h3>
+                                    <p class="text-brand-600 font-medium">Independent / Freelance</p>
+                                </div>
+                                <span class="text-sm text-slate-500 mt-1 sm:mt-0">Ongoing</span>
+                            </div>
+                            <p class="text-slate-700 leading-relaxed">
+                                Producing professional, clear, and persuasive vocal delivery for commercials, narration, and digital content. Specializing in scripts that blend conversational authenticity with conversion-focused pacing—ready to integrate with modern audio production workflows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Portfolio Showcase</h2>
+                <div class="w-20 h-1 bg-brand-600 mx-auto rounded-full mb-4"></div>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">A selection of recent work spanning SEO journalism, direct-response advertising, and conversion-focused storytelling.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-300 hover:shadow-lg transition-all">
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="px-2 py-1 bg-brand-100 text-brand-700 text-xs font-semibold rounded">SEO ARTICLE</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded">~430 words</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">
+                            How AI is Changing the Future of Freelance Work
+                        </h3>
+                        <p class="text-slate-600 mb-4 italic">"A New Era of Possibilities"</p>
+                        <div class="bg-white p-4 rounded-lg border border-slate-200 max-h-64 overflow-y-auto text-sm text-slate-700 leading-relaxed">
+                            <p class="mb-3">The freelance landscape is undergoing a seismic shift. Artificial intelligence is no longer a futuristic concept—it's here, reshaping how independent workers find clients, deliver value, and scale their businesses. Gone are the days when freelancing meant trading hours for dollars in a linear equation. Today, AI tools are multiplying freelancers' output while opening doors to opportunities that were previously inaccessible.</p>
+                            <p class="mb-3">The most profound change is the shift from automation to augmentation. AI doesn't replace freelancers; it amplifies them. Writers use large language models to draft content faster and beat writer's block. Designers leverage generative AI to produce multiple concepts in minutes rather than days. Developers rely on AI coding assistants to debug and ship features quicker. The freelancer who masters these tools doesn't just compete—they dominate their niche.</p>
+                            <p>The Playing Field is Leveling: AI is democratizing access to high-income skills. A solo freelancer in Jakarta can now deliver enterprise-grade research reports, video edits, or marketing strategies using AI tools that cost less than a monthly coffee budget. The future belongs to digitally fluent freelancers who treat AI as their collaborative partner.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:border-brand-300 hover:shadow-lg transition-all">
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="px-2 py-1 bg-brand-100 text-brand-700 text-xs font-semibold rounded">AD COPY</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded">FB/IG</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">
+                            How to Master AI Tools for Daily Productivity
+                        </h3>
+                        <p class="text-slate-600 mb-4 italic">Direct-Response Facebook/Instagram Ad Set</p>
+                        <div class="bg-white p-4 rounded-lg border border-slate-200 max-h-64 overflow-y-auto text-sm text-slate-700 leading-relaxed">
+                            <p class="mb-3 font-semibold text-slate-900">Stop Wasting Hours on Tasks That AI Can Do in Minutes.</p>
+                            <p class="mb-3">Imagine finishing your weekly reports, content drafts, and data analysis before lunch—without burning out. While everyone else is still stuck in the grind, you could be focusing on the work that actually moves the needle.</p>
+                            <p class="mb-3">Here's what you'll get:</p>
+                            <ul class="list-disc list-inside mb-3 space-y-1">
+                                <li>Zero-to-Hero Prompt Engineering</li>
+                                <li>Automated Workflow Blueprints</li>
+                                <li>Human + AI Synergy Framework</li>
+                            </ul>
+                            <p class="mb-3">Bonus: Lifetime access to our private community of 5,000+ productivity professionals. This course has already helped 2,300+ professionals reclaim 15+ hours per week.</p>
+                            <p class="font-semibold text-slate-900">🔥 Limited-time launch pricing expires in 48 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Let's Build Something Extraordinary</h2>
+            <p class="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
+                Whether you need conversion copy, AI workflow strategy, or a voice that moves markets—I'm ready to engineer your next growth lever.
+            </p>
+            <a href="mailto:novriansyah@example.com" class="inline-block px-8 py-4 bg-brand-600 text-white font-semibold rounded-lg hover:bg-brand-500 transition-colors text-lg">
+                Start a Conversation
+            </a>
+            <div class="mt-12 pt-8 border-t border-slate-800 text-sm text-slate-500">
+                <p>© 2026 Novriansyah. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
